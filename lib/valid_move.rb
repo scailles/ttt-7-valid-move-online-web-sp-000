@@ -2,8 +2,8 @@
 board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
 
 def valid_move?(board, input)
-	spot = input.to_i - 1
-	if !position_taken?(board, spot) && spot.between?(0,8)
+	
+	if !position_taken?(board, input) && input.between?(0,8)
 		true
 
 	else
